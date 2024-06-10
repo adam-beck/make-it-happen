@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts",
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit migrate"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.0.2",
+    "@lucia-auth/adapter-drizzle": "^1.0.7",
+    "@node-rs/argon2": "^1.8.3",
+    "drizzle-orm": "^0.31.1",
+    "elysia": "latest",
+    "lucia": "^3.2.0",
+    "nanoid": "^5.0.7",
+    "oslo": "^1.2.0",
+    "postgres": "^3.4.4"
+  },
+  "devDependencies": {
+    "@types/nanoid": "^3.0.0",
+    "bun-types": "latest",
+    "drizzle-kit": "^0.22.2"
+  },
+  "module": "src/index.js"
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Test Post
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/sign-up
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  username: adam
+  password: foobar
+}
